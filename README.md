@@ -1,6 +1,20 @@
-# AglPc
+# AGL Programming Challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
+This app renders a list of cats in alphabetic order, grouped by owner gender.
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7. It uses Angular, TypeScript, Material UI, Jasmine, Karma.
+
+API data is sourced from is http://agl-developer-test.azurewebsites.net/people.json
+
+## Getting Started
+
+To run the application locally, git clone the repository and run the following commands:
+
+```
+cd agl-pc
+npm install
+npm start
+```
 
 ## Development server
 
