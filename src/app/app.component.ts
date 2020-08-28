@@ -3,8 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'agl-pc';
+  title = 'AGL Programming Challenge';
+  author = 'Richard Snazell';
+  dateCreated = '26th Aug 2020';
 }
