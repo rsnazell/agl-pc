@@ -37,7 +37,7 @@ describe('OwnerService', () => {
     });
 
     const req = httpTestingController.expectOne(
-      'http://agl-developer-test.azurewebsites.net/people.json'
+      'https://agl-developer-test.azurewebsites.net/people.json'
     );
 
     expect(req.request.method).toEqual('GET');

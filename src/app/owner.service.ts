@@ -7,7 +7,7 @@ import { Owner } from './app.types';
   providedIn: 'root',
 })
 export class OwnerService {
-  private url = 'http://agl-developer-test.azurewebsites.net/people.json';
+  private url = 'https://agl-developer-test.azurewebsites.net/people.json';
 
   constructor(private http: HttpClient) {}
 
