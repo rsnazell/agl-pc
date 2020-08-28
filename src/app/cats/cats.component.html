@@ -1,0 +1,30 @@
+<style>
+  .loading {
+    display: flex;
+  }
+  .loading span {
+    margin-left: 8px;
+  }
+</style>
+
+<div *ngIf="!cats && !error" class="loading">
+  <mat-spinner diameter="20" aria-label="loading data"></mat-spinner>
+  <span>Loading, please wait ...</span>
+</div>
+
+<div *ngIf="error" data-testid="error-message">
+  Sorry, API data is currently unavailable. Please try again later.
+</div>
+
+<section *ngIf="cats?.male.length">
+  <h4>Male</h4>
+  <ul data-testid="male-owners-cats">
+    <li *ngFor="let pet of cats.male">{{ pet.name }}</li>
+  </ul>
+</section>
+<section *ngIf="cats?.female.length">
+  <h4>Female</h4>
+  <ul data-testid="female-owners-cats">
+    <li *ngFor="let pet of cats.female">{{ pet.name }}</li>
+  </ul>
+</section>
